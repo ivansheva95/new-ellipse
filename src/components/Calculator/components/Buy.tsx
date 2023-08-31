@@ -5,10 +5,6 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { Input } from './Input'
 import { Button } from './Button'
 
-type Props = {
-
-}
-
 type FormValues = {
   money: number
   card: number

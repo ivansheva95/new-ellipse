@@ -1,12 +1,6 @@
-import React from 'react'
 import { Calculator } from '@/components'
 // import { Icon } from '@/ui'
 import crypto from '@/assets/img/crypto.svg'
-
-type Props = {
-    title: string,
-    texts: string
-}
 
 export const HomePromo = () => {
   return (

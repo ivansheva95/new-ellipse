@@ -1,7 +1,5 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { 
-  Footer, 
   Header 
 } from '@/modules'
 
@@ -12,7 +10,6 @@ export const RootLayout = () => {
         <main className='flex-auto'>
             <Outlet />
         </main>
-        {/* <Footer /> */}
     </div>
   )
 }

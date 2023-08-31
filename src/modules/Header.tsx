@@ -1,4 +1,3 @@
-import React from 'react'
 import { Logo } from '@/ui'
 
 export const Header = () => {

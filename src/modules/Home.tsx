@@ -1,4 +1,3 @@
-import React from 'react'
 import { HomePromo } from '@/sections/HomePromo'
 
 export const Home = () => {

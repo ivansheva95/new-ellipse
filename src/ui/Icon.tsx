@@ -1,4 +1,3 @@
-import React from 'react'
 import sprite from '@/assets/svg/_sprite.svg'
 
 type Props = {
