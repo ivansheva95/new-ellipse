@@ -1,2 +1,2 @@
 export { Calculator } from './Calculator'
-export { Menu } from './Menu'
+export { MenuDesktop, MenuMobile } from './Menu'
