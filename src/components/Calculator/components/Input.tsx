@@ -65,7 +65,7 @@ export const Input = ({ name, label, options, loading, type = 'text', disabled, 
         <div className='mb-2'>
             <div className={`h-[60px] w-full border ${errors[name] ? 'border-red-500' : 'border-[#46475e]'} rounded overflow-hidden flex  relative`}>
                 <div className={`${options ? 'w-[60%]' : 'w-full'} relative`}>
-                    <label htmlFor='desc' className='absolute top-[5px] left-[20px] text-gray-300'>{label}</label>
+                    <label htmlFor='desc' className='absolute top-[5px] left-[20px]'>{label}</label>
                     <input
                         ref={field.ref}
                         onBlur={field.onBlur}
@@ -75,7 +75,10 @@ export const Input = ({ name, label, options, loading, type = 'text', disabled, 
                         placeholder={placeholder}
                         disabled={disabled}
                         id='desc'
-                        className={`w-full px-4 py-6 bg-[#3e3e59] outline-none text-xl ${disabled ? 'cursor-not-allowed opacity-50' : ''}`}
+                        className={`w-full px-4 py-6
+                        bg-[#3e3e59] 
+                        bg-transparent
+                        outline-none text-xl ${disabled ? 'cursor-not-allowed opacity-50' : ''}`}
                         type={type}
                     />
                     {loading && <div className='absolute -bottom-[4px] left-2 z-10'><Logo variant='small' /></div>}
@@ -83,7 +86,7 @@ export const Input = ({ name, label, options, loading, type = 'text', disabled, 
 
                 {options && (
                     <div className='w-[40%]'>
-                        <select className='w-full px-4 h-full bg-[#36324a] cursor-pointer outline-none uppercase' name="crypto" >
+                        <select className='w-full px-4 h-full bg-[transparent] cursor-pointer outline-none uppercase' name="crypto" >
                             {React.Children.toArray(options.map(option => <option value={option}>{option}</option>))}
                         </select>
                     </div>

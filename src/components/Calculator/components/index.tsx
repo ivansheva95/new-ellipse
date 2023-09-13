@@ -7,16 +7,23 @@ export const Calculator = () => {
   const handleSellOrBuy = (variant: 'buy' | 'sell') => setEllOrBuy(variant)
 
   return (
-    <div className='max-w-[600px] w-full border-[#46475e] border rounded-md bg-[#343443] overflow-hidden shadow'>
+    <div className='max-w-[600px] w-full 
+    border-[#46475e]
+    border-transparent
+    border rounded-[20px]
+    bg-[#343443] 
+    bg-[#f5f5f7]
+    shadow-lg
+     overflow-hidden shadow'>
       <div className=''>
         <button 
-          className={`h-[50px] w-1/2 duration-100 ${sellOrBuy === 'buy' ? '' : 'border-[rgb(89,90,117)] border-b border-r duration-100 bg-[#30303e]'}`} 
+          className={`h-[50px] w-1/2 duration-100 ${sellOrBuy === 'buy' ? '' : ' duration-100 bg-[#f2f2f4]'}`} 
           onClick={() => handleSellOrBuy('buy')}
           >
             Buy Crypto
          </button>
         <button 
-          className={`cursor-not-allowed h-[50px] w-1/2 duration-100 ${sellOrBuy === 'sell' ? '' : 'border-[#46475e] border-b border-l duration-100 bg-[#30303e]'}`} 
+          className={`cursor-not-allowed h-[50px] w-1/2 duration-100 ${sellOrBuy === 'sell' ? '' : ' duration-100 bg-[#fbfbfd]'}`} 
           // onClick={() => handleSellOrBuy('sell')}
           >
             Sell Crypto

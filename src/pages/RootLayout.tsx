@@ -5,7 +5,7 @@ import {
 
 export const RootLayout = () => {
   return (
-    <div className='min-h-screen bg-[#2b2b36] text-white flex flex-col'>
+    <div className='min-h-screen bg-[#fff] text-#000 flex flex-col'>
         <Header />
         <main className='flex-auto'>
             <Outlet />

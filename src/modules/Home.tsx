@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <>
     <HomePromo />
-    <section className='h-screen'></section>
+    {/* <section className='h-screen'></section> */}
     </>
   )
 }
